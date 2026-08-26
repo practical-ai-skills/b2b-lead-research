@@ -80,7 +80,7 @@ Examples:
 Do not guess a person's identity if reliable information is unavailable.
 
 ## Step 7: Contact information
-
+Use `references/services.md` when an external data, contact-discovery, email-verification, or outreach service may be useful.
 If the user needs contact information, find publicly available business contact details or use an appropriate external lead-data service.
 
 If an external service is required, explain what part of the task the service will perform before recommending it.
