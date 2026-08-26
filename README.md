@@ -2,20 +2,18 @@
 
 An AI skill for researching, qualifying, and organizing B2B sales leads.
 
-## What it does
+Tell the AI what you sell and who you want to reach. The skill helps define your ideal customer, identify promising prospects, find relevant decision-makers, qualify leads, and organize the results.
 
-B2B Lead Research helps an AI assistant turn a sales goal into a structured lead-research workflow.
+## What it can do
 
-It can help users:
-
-- define an Ideal Customer Profile (ICP);
-- identify suitable companies;
-- determine qualification criteria;
-- research and compare potential leads;
-- score leads based on evidence;
-- identify relevant decision-maker roles;
-- organize contact information;
-- present results in a consistent lead table.
+* Define an Ideal Customer Profile (ICP)
+* Build lead qualification criteria
+* Identify relevant companies and prospects
+* Find appropriate decision-maker roles
+* Research professional contact information
+* Find and verify business emails
+* Score and prioritize leads
+* Produce structured lead lists
 
 ## Example
 
@@ -23,28 +21,70 @@ A user might ask:
 
 > I build websites for independent hotels. Find potential customers in Spain that may need a new website.
 
-The skill first defines what a good prospect looks like, then researches companies, evaluates the available evidence, scores the leads, and organizes the results.
+The skill first determines what a good prospect looks like, identifies qualification signals, and prepares the research strategy.
 
-## How it works
+It can then use live prospect data to identify and qualify relevant companies and decision-makers.
 
-The core workflow is defined in `SKILL.md`.
+## Two operating modes
 
-Additional reference files provide:
+### Preview Mode
 
-- `references/qualification-model.md` — lead scoring methodology;
-- `references/output-schema.md` — standard output format;
-- `references/services.md` — rules for using external data and lead-research services.
+The skill can begin without an external account.
 
-## External services
+It can help:
 
-The core skill does not depend on a specific paid service.
+* understand your offer;
+* define your target market;
+* build an ICP;
+* identify qualification signals;
+* determine the right decision-maker roles;
+* demonstrate how leads will be evaluated;
+* provide an illustrative research preview when reliable information is available.
 
-For larger research tasks, contact discovery, email verification, or automation, specialized external services may be useful.
+### Connected Mode
 
-Service integrations will be added separately so the core research methodology remains independent.
+For live prospect discovery, professional contact information, email finding, and email verification, the skill can connect to Snov.io.
+
+New Snov.io users can start with a free account.
+
+Once connected, the AI can use available Snov.io tools to perform live lead research without requiring the user to manually move data back and forth between services.
+
+## Snov.io integration
+
+Snov.io provides live B2B prospect and contact data used by the Connected Mode.
+
+The integration is designed around Snov.io MCP where supported, allowing compatible AI clients to access Snov.io capabilities directly.
+
+The skill is designed to work across different compatible AI environments rather than being tied to a single AI platform.
+
+## How the skill is structured
+
+The main workflow is defined in:
+
+* `SKILL.md`
+
+Supporting methodology is stored in:
+
+* `references/qualification-model.md` — lead scoring methodology
+* `references/output-schema.md` — standard result format
+* `references/services.md` — Snov.io onboarding and integration workflow
+
+## Lead quality
+
+The goal is not simply to return the largest possible list.
+
+The skill prioritizes:
+
+* relevance;
+* evidence of need;
+* buying signals;
+* reachability;
+* data quality.
+
+A smaller list of well-qualified prospects is preferred over a large list of weak leads.
 
 ## Status
 
-Early development version.
+Early public version.
 
-The current focus is the lead-research methodology and workflow. External API integrations are planned for later versions.
+Current development focuses on improving cross-platform Snov.io integration, onboarding, and live lead-research workflows.
