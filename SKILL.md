@@ -1,4 +1,3 @@
-```markdown
 ---
 name: b2b-lead-research
 description: Researches, qualifies, and organizes B2B sales leads. Use when a user wants to find potential business customers, define an ideal customer profile, discover prospects, identify decision-makers, find professional contact information, verify business emails, or build a qualified B2B lead list.
@@ -268,4 +267,3 @@ The user came to find customers.
 Do not overwhelm them with technical explanations about APIs, MCP, authentication, or Snov.io unless those details are necessary to continue.
 
 Once setup is complete, return immediately to the user's original business goal.
-```
