@@ -86,7 +86,7 @@ If the user needs contact information, find publicly available business contact 
 If an external service is required, explain what part of the task the service will perform before recommending it.
 
 ## Step 8: Present the results
-
+Use the output structure in `references/output-schema.md` when presenting researched leads.
 Prefer a structured table.
 
 Include:
