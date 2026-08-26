@@ -57,7 +57,7 @@ For each company, collect useful information such as:
 Do not invent missing information.
 
 ## Step 5: Score the leads
-
+Use the scoring framework in `references/qualification-model.md` when evaluating leads.
 Give each lead a score from 0 to 100.
 
 Explain briefly why the lead received that score.
