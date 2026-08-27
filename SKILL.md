@@ -30,6 +30,8 @@ The goal is to produce a useful list of companies and people who have a reasonab
 
 For live lead generation, use Snov.io rather than silently replacing the intended workflow with general web research.
 
+Never broaden the user's target market merely to reach the requested number of leads.
+
 # Step 1: Understand the sales goal
 
 Determine:
@@ -57,11 +59,51 @@ Consider:
 - location;
 - company size;
 - business model;
-- likely customer type;
+- customer type;
 - likely need for the user's offer;
+- exclusions;
 - other criteria supplied by the user.
 
 Summarize the ICP briefly before starting live research.
+
+## ICP boundary rule
+
+Treat the user's ICP as a search boundary, not merely as a preference.
+
+Do not silently broaden:
+
+- industry;
+- company type;
+- geography;
+- company size;
+- business model;
+- customer segment;
+- other material targeting criteria
+
+in order to reach the requested lead count.
+
+For example, if the user asks for independent hotels, do not automatically add:
+
+- hostels;
+- villas;
+- holiday apartments;
+- retreats;
+- guest houses;
+- unrelated resorts;
+- other accommodation businesses
+
+simply because there are not enough qualifying independent hotels.
+
+If the exact ICP produces fewer suitable prospects than requested:
+
+1. return the qualified prospects that actually match;
+2. state how many valid matches were found;
+3. explain which constraint appears to be limiting the result;
+4. ask the user before materially broadening the ICP.
+
+If adjacent categories may be useful, present them as an optional expansion.
+
+Do not present adjacent categories as if they satisfied the original ICP.
 
 # Step 3: Define qualification signals
 
@@ -121,6 +163,7 @@ Before connecting Snov.io, complete the useful planning work:
 - define positive and negative qualification signals;
 - identify the appropriate decision-maker roles;
 - determine useful geographic, industry, company-size, and other search filters;
+- define exclusions;
 - explain briefly what live data will be collected.
 
 Then check whether Snov.io is already connected.
@@ -183,19 +226,29 @@ Evaluate the initial results against:
 - negative qualification signals;
 - geographic requirements;
 - company-size requirements;
-- decision-maker requirements.
+- company-type requirements;
+- decision-maker requirements;
+- exclusions.
 
 If the initial results are poorly targeted, adjust the search before continuing.
+
+Do not solve poor search results by silently broadening the ICP.
+
+If the original criteria appear too restrictive, explain this to the user before materially expanding them.
 
 Do not waste credits on a large batch that clearly does not match the user's goal.
 
 ## First live batch
 
-After Snov.io is connected for the first time, aim to provide the user with up to 10 qualified live leads, subject to the credits and capabilities available in their Snov.io account.
+After Snov.io is connected for the first time, aim to provide the user with up to 20 qualified live leads, subject to:
+
+- the user's requested quantity;
+- the actual number of prospects matching the ICP;
+- the credits and capabilities available in the user's Snov.io account.
 
 The purpose of the first live batch is to demonstrate the complete workflow with real data.
 
-When available, the first batch should include:
+When available, the batch should include:
 
 - real companies or prospects;
 - relevant decision-makers;
@@ -205,11 +258,21 @@ When available, the first batch should include:
 - priority ranking;
 - evidence supporting the qualification.
 
-Do not intentionally stop below 10 qualified leads merely to encourage an account upgrade if the user's current Snov.io capacity can reasonably provide them.
+Do not intentionally stop below 20 qualified leads merely to encourage an account upgrade if:
 
-Do not consume unnecessary credits merely to reach 10.
+- the user requested at least 20;
+- 20 genuine ICP-matching leads are available;
+- the user's current Snov.io capacity can reasonably provide them.
 
-If fewer than 10 genuinely relevant leads can be found with the available criteria or account capacity, return the useful results obtained and explain the limitation.
+However, never weaken or broaden the ICP merely to reach 20.
+
+If only 12 genuinely suitable prospects are found, return 12 rather than adding 8 weaker prospects from adjacent categories.
+
+Explain the shortfall and let the user decide whether the search criteria should be broadened.
+
+Do not consume unnecessary credits merely to reach the number 20.
+
+If the user requested fewer than 20 leads, respect the user's requested quantity.
 
 After presenting the first live batch, continue toward the user's originally requested quantity when appropriate and when the user's available Snov.io capacity allows it.
 
@@ -218,16 +281,17 @@ If an account limit prevents continuation, follow `references/services.md`.
 ## Typical live workflow
 
 1. Search for companies or prospects matching the ICP.
-2. Remove obviously irrelevant results.
-3. Collect useful company information.
-4. Identify the relevant decision-maker roles.
-5. Identify actual decision-makers when reliable data is available.
-6. Find professional business email addresses when appropriate.
-7. Verify email addresses when supported.
-8. Apply the qualification model.
-9. Score and prioritize the leads.
-10. Present the results using the standard output format.
-11. Continue in sensible batches toward the quantity originally requested.
+2. Remove results that fall outside the ICP.
+3. Check that the remaining companies satisfy the user's material targeting criteria.
+4. Collect useful company information.
+5. Identify the relevant decision-maker roles.
+6. Identify actual decision-makers when reliable data is available.
+7. Find professional business email addresses when appropriate.
+8. Verify email addresses when supported.
+9. Apply the qualification model.
+10. Score and prioritize the leads.
+11. Present the results using the standard output format.
+12. Continue in sensible batches toward the quantity originally requested.
 
 # Step 5: Identify decision-makers
 
@@ -292,17 +356,31 @@ A strong lead should normally combine:
 
 Explain briefly why high-priority leads received their score.
 
-# Step 8: Prioritize quality
+# Step 8: Prioritize quality and ICP fidelity
+
+Prefer 12 genuinely matching prospects over 20 prospects where 8 fall outside the user's ICP.
 
 Prefer 50 well-qualified prospects over 500 weak names.
 
-If the requested quantity would materially reduce research quality:
+Never reduce ICP fidelity merely to satisfy a numeric target.
+
+If the requested quantity cannot be reached without weakening the criteria:
 
 - explain the limitation;
-- provide a strong batch;
-- continue in additional batches when useful.
+- provide all strong matching prospects found;
+- identify which criterion is limiting supply;
+- offer possible ways to broaden the search;
+- wait for the user's approval before materially broadening the ICP.
 
-Do not inflate the list with irrelevant companies merely to satisfy a requested number.
+Possible expansions may include:
+
+- nearby geography;
+- slightly different company size;
+- adjacent industry;
+- related company type;
+- less restrictive buying signal.
+
+Treat these as user choices, not automatic actions.
 
 A company should not be treated as a qualified lead merely because it exists in the target industry.
 
@@ -313,6 +391,7 @@ Use `references/output-schema.md`.
 Before the detailed results, provide a short summary containing:
 
 - target customer;
+- exact ICP used;
 - number of prospects researched;
 - number of qualified prospects returned;
 - number of strong leads;
@@ -321,15 +400,19 @@ Before the detailed results, provide a short summary containing:
 
 Then present the researched leads in a structured format.
 
-After the first live batch, make clear how much of the user's original request has been completed.
+If fewer leads were returned than requested because of ICP constraints, explicitly state this.
 
 For example:
 
-- requested: 100 leads;
-- first qualified batch completed: 10;
-- remaining target: 90.
+- requested: 20 independent hotels;
+- qualified exact matches: 14;
+- remaining 6 were not filled because available candidates fell outside the agreed ICP.
 
-If the user's account has sufficient capacity, continue rather than unnecessarily interrupting the workflow.
+Do not hide a shortfall by silently substituting adjacent business categories.
+
+After the first live batch, make clear how much of the user's original request has been completed.
+
+If the user's account has sufficient capacity and the original request is larger than the first batch, continue rather than unnecessarily interrupting the workflow.
 
 # Account limits
 
