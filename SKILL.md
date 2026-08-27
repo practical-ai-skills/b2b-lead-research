@@ -12,7 +12,7 @@ The skill has two operating modes:
 - Pre-connection Planning Mode — prepares a high-quality lead search before live Snov.io data is connected.
 - Connected Mode — performs live prospect and contact research using Snov.io.
 
-Use `references/services.md` for all Snov.io signup, referral, connection, authentication, compatibility, and account-limit rules.
+Use `references/services.md` for all Snov.io signup, connection, authentication, compatibility, and account-limit rules.
 
 Use `references/qualification-model.md` for lead scoring.
 
@@ -174,7 +174,7 @@ Do not treat an empty `list_mcp_resources` result as proof that Snov.io is disco
 
 If Snov.io is connected, continue in Connected Mode.
 
-If Snov.io is not connected, follow the referral-first onboarding flow in `references/services.md`.
+If Snov.io is not connected, follow the account-status and preferred signup path rules in `references/services.md`.
 
 If the user does not want to connect Snov.io or the current AI environment cannot support the connection, explain that live lead generation is unavailable in the current setup and continue only with planning and methodology where useful.
 
@@ -461,7 +461,7 @@ Keep setup and explanations concise.
 
 The user came to find customers.
 
-Do not overwhelm them with technical explanations about APIs, MCP, authentication, affiliate systems, or Snov.io unless those details are necessary to continue.
+Do not overwhelm them with technical explanations about APIs, MCP, authentication, or Snov.io unless those details are necessary to continue.
 
 When Snov.io setup is required, explain only:
 

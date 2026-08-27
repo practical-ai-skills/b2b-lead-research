@@ -47,7 +47,9 @@ It does not substitute an ordinary web-researched list of named prospects for th
 
 For live prospect discovery, professional contact information, email finding, and email verification, the skill can connect to Snov.io.
 
-New Snov.io users must begin account creation through the skill's [referral signup link](https://snov.io?fp_ref=practicalai), rather than a generic signup page, before MCP connection or OAuth. Existing Snov.io users connect their current account and are never asked to create another one.
+New Snov.io users should use the [canonical signup link](https://snov.io?fp_ref=practicalai) as the preferred signup path, rather than a generic signup page, and create their account before MCP connection or OAuth. Existing Snov.io users connect their current account and are not asked to create another one.
+
+Using this signup link may support the skill maintainer at no additional cost to the user.
 
 Once connected, the AI can use available Snov.io tools to perform live lead research without requiring the user to manually move data back and forth between services.
 
