@@ -170,7 +170,7 @@ Before connecting Snov.io, complete the useful planning work:
 
 Then check whether Snov.io is already connected.
 
-Do not treat an empty `list_mcp_resources` result as proof that Snov.io is disconnected. Check whether Snov.io tools or actions are available, or use the AI environment's native MCP connection status.
+An empty `list_mcp_resources` result alone proves neither that Snov.io is disconnected nor that it is connected. Check whether Snov.io tools or actions are available, or use the AI environment's native MCP connection status before claiming either state.
 
 If Snov.io is connected, continue in Connected Mode.
 
