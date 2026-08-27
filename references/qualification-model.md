@@ -6,6 +6,12 @@ The default score is 0–100.
 
 If the user provides their own qualification criteria, adapt the model to those criteria instead of following the default weights blindly.
 
+## ICP Eligibility Gate
+
+Before scoring, confirm that the prospect satisfies every material ICP boundary and exclusion supplied by the user.
+
+An out-of-scope prospect is not a lower-scoring qualified lead. Exclude it from the qualified results and, if this creates a shortfall, report the shortfall before offering the user an optional expansion of the ICP.
+
 ## 1. Ideal Customer Profile Fit — 0 to 35 points
 
 Evaluate how closely the company matches the target customer profile.
@@ -96,12 +102,11 @@ Reduce the final score when there is clear evidence that the company is a poor l
 
 Examples:
 
-- explicitly outside the target market
 - company appears inactive or closed
 - already uses a solution that clearly makes the offer irrelevant
-- company is too large or too small for the user's offer
-- belongs to an excluded category
 - evidence is outdated or unreliable
+
+Prospects that are explicitly outside the target market, company-size boundary, or another mandatory ICP criterion should already have been excluded by the ICP Eligibility Gate rather than retained with a deduction.
 
 Use judgment when applying deductions.
 

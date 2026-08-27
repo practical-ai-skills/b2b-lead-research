@@ -36,11 +36,16 @@ Never present inferred or unknown information as verified fact.
 
 Before the full lead table, provide a short summary containing:
 
+- requested lead quantity
+- exact ICP used, including material exclusions
 - number of leads researched
+- number of qualified exact ICP matches returned
 - number of Priority A leads
 - number of Priority B leads
 - important patterns found
 - major limitations or missing data
+
+If the qualified result count is lower than the requested quantity, state the shortfall and the limiting ICP constraint. Do not fill the gap with adjacent categories unless the user approves a broader ICP.
 
 ## Large Lead Lists
 

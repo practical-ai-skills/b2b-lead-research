@@ -164,6 +164,18 @@ After a new user has gone through the referral signup flow, or when an existing 
 
 Do not make the user repeat their original lead request after connection.
 
+### Connection detection
+
+Do not treat an empty `list_mcp_resources` result as proof that Snov.io is disconnected. Some MCP servers expose tools or actions without exposing resources.
+
+Determine connection state using one or more of:
+
+* actual Snov.io tools or actions exposed by the AI environment;
+* the AI client's native MCP or connector status;
+* a lightweight, non-destructive Snov.io capability check when one is available and needed.
+
+If Snov.io tools are already available, continue without reconnecting or sending an existing user through signup. Only start connection onboarding when the available evidence shows that Snov.io is not connected or cannot be used.
+
 ## Authentication
 
 Prefer secure Snov.io MCP/OAuth authentication whenever available.
@@ -268,7 +280,7 @@ Use account credits efficiently.
 
 For a newly connected user, first validate the search with a small number of results.
 
-If the search is correctly targeted, continue toward a first useful batch of up to 10 qualified live leads.
+If the search is correctly targeted, continue toward a first useful batch of up to 20 qualified live leads, subject to the user's requested quantity, the number of genuine ICP matches, and the user's available account capacity.
 
 The first live batch should demonstrate as much of the complete workflow as the user's account and available Snov.io capabilities allow.
 
@@ -282,11 +294,11 @@ When available, include:
 * priority rankings;
 * supporting evidence.
 
-Do not intentionally stop below 10 qualified leads merely to encourage an upgrade when the user's current account can reasonably provide them.
+Do not intentionally stop below 20 qualified leads merely to encourage an upgrade when the user requested at least 20, 20 genuine ICP-matching leads are available, and the user's current account can reasonably provide them.
 
-Do not waste credits merely to reach the number 10.
+Do not waste credits or broaden the user's ICP merely to reach the number 20.
 
-If fewer than 10 genuinely suitable leads are available, return the useful results found and explain why the batch is smaller.
+If the search produces fewer exact ICP matches than the user's requested quantity, capped at 20 for this first batch, return the matches found and explain the shortfall before offering to broaden the ICP.
 
 After the first batch, continue toward the quantity originally requested when the user's current account capacity allows it.
 

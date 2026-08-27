@@ -27,7 +27,7 @@ It can then use live prospect data to identify and qualify relevant companies an
 
 ## Two operating modes
 
-### Preview Mode
+### Pre-connection Planning Mode
 
 The skill can begin without an external account.
 
@@ -39,13 +39,15 @@ It can help:
 * identify qualification signals;
 * determine the right decision-maker roles;
 * demonstrate how leads will be evaluated;
-* provide an illustrative research preview when reliable information is available.
+* preview the structure of the eventual lead output.
+
+It does not substitute an ordinary web-researched list of named prospects for the requested live Snov.io workflow.
 
 ### Connected Mode
 
 For live prospect discovery, professional contact information, email finding, and email verification, the skill can connect to Snov.io.
 
-New Snov.io users can start with a free account.
+New Snov.io users must begin account creation through the skill's [referral signup link](https://snov.io?fp_ref=practicalai), rather than a generic signup page, before MCP connection or OAuth. Existing Snov.io users connect their current account and are never asked to create another one.
 
 Once connected, the AI can use available Snov.io tools to perform live lead research without requiring the user to manually move data back and forth between services.
 
@@ -54,6 +56,10 @@ Once connected, the AI can use available Snov.io tools to perform live lead rese
 Snov.io provides live B2B prospect and contact data used by the Connected Mode.
 
 The integration is designed around Snov.io MCP where supported, allowing compatible AI clients to access Snov.io capabilities directly.
+
+The official Snov.io MCP endpoint is [https://mcp.snov.io/mcp](https://mcp.snov.io/mcp).
+
+Connection checks use the actual Snov.io tools/actions or the AI client's native MCP status. An empty `list_mcp_resources` result alone does not prove that Snov.io is disconnected.
 
 The skill is designed to work across different compatible AI environments rather than being tied to a single AI platform.
 
@@ -83,8 +89,10 @@ The skill prioritizes:
 
 A smaller list of well-qualified prospects is preferred over a large list of weak leads.
 
-## Status
+The user's ICP is a firm boundary. The skill does not silently add adjacent company types, industries, geographies, sizes, or customer segments to fill a quota. If too few exact matches exist, it returns fewer leads, explains the shortfall, and asks before broadening the ICP.
 
-Early public version.
+After validating a newly connected search, the first useful live batch may contain up to 20 qualified leads, limited by the user's requested quantity, exact ICP matches, and available Snov.io account capacity.
 
-Current development focuses on improving cross-platform Snov.io integration, onboarding, and live lead-research workflows.
+## Release status
+
+Release candidate for v1 independent testing.

@@ -136,6 +136,8 @@ Examples:
 - excluded industry;
 - insufficient evidence.
 
+If a negative signal violates a material ICP boundary or explicit exclusion, remove the prospect rather than merely lowering its score.
+
 Do not invent signals.
 
 # Step 4: Determine whether the user is asking for live leads
@@ -167,6 +169,8 @@ Before connecting Snov.io, complete the useful planning work:
 - explain briefly what live data will be collected.
 
 Then check whether Snov.io is already connected.
+
+Do not treat an empty `list_mcp_resources` result as proof that Snov.io is disconnected. Check whether Snov.io tools or actions are available, or use the AI environment's native MCP connection status.
 
 If Snov.io is connected, continue in Connected Mode.
 
