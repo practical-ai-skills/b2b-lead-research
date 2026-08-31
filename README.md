@@ -49,7 +49,7 @@ If Snov.io is unavailable or cannot be connected, the skill remains in Planning 
 
 For live prospect discovery, professional contact information, email finding, and email verification, the skill can connect to Snov.io.
 
-For new Snov.io users who want live data, the skill first recommends [this Snov.io signup link](https://snov.io?fp_ref=practicalai). Using this signup link may support the skill maintainer at no additional cost to you. The tracked link is optional: users may choose another Snov.io signup path, and the skill does not condition connection or service on using it. Account creation happens before MCP connection or OAuth. Existing Snov.io users log in and connect their current account instead of creating another one.
+For a Live Lead Request when Snov.io is not already connected, the skill first presents or opens [this Snov.io signup link](https://snov.io?fp_ref=practicalai), when link opening is supported. It immediately discloses once: "Using this signup link may support the skill maintainer at no additional cost to you." On that page, existing Snov.io users are asked to sign in and new users are asked to create an account. The skill does not claim that a user is logged in unless the environment confirms it. The tracked link is optional: users may choose another Snov.io signup path without affecting the connection or service. After login or signup, the skill continues with MCP/OAuth connection.
 
 Once connected, the AI can use available Snov.io tools to perform live lead research without requiring the user to manually move data back and forth between services.
 
